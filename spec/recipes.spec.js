@@ -8,7 +8,7 @@ describe('Edamam Recipes API', () => {
     shell.exec('npx sequelize db:drop')
     shell.exec('npx sequelize db:create')
     shell.exec('npx sequelize db:migrate')
-    shell.exec('npx sequelize db:seed:all')
+    // shell.exec('npx sequelize db:seed:all')
   });
 
 
