@@ -14,7 +14,7 @@ describe('Edamam Recipes API', () => {
 
   describe('Test GET /api/v1/recipes', () => {
     test('should return a 200 status and all recipes within the desired search parameters', () => {
-      return request(app).get('/api/v1/recipes').then(response => {
+      return request(app).get('/api/v1/recipes?q=chicken').then(response => {
         expect(response.status).toBe(200)
         expect(response.body).toBeInstanceOf(Object)
         expect(Object.keys(response.body.recipe1)).toContain('cook_time')
