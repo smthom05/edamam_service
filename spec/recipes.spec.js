@@ -25,4 +25,18 @@ describe('Edamam Recipes API', () => {
       })
     })
   });
+
+  describe('Test GET /api/v1/recipes/cookTime', () => {
+    test('should return a 200 status and all recipes within the desired search parameters', () => {
+      return request(app).get('/api/v1/recipes/cookTime?time=15-30').then(response => {
+        expect(response.status).toBe(200)
+        expect(response.body).toBeInstanceOf(Object)
+        expect(Object.keys(response.body.recipe1)).toContain('cook_time')
+        expect(Object.keys(response.body.recipe1)).toContain('calories')
+        expect(Object.keys(response.body.recipe1)).toContain('image')
+        expect(Object.keys(response.body.recipe1)).toContain('label')
+        expect(Object.keys(response.body.recipe1)).toContain('ingredients')
+      })
+    })
+  });
 });
