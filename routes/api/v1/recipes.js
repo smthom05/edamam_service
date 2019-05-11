@@ -32,7 +32,6 @@ router.get('/cookTime', async function(req, res) {
     return await  _recipeFormatter(recipesData)
   }
   var data =  await getRecipes();
-  eval(pry.it)
   res.setHeader("Content-Type", "application/json");
   res.status(200).send(JSON.stringify(data));
 });

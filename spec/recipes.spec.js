@@ -36,6 +36,8 @@ describe('Edamam Recipes API', () => {
         expect(Object.keys(response.body.recipe1)).toContain('image')
         expect(Object.keys(response.body.recipe1)).toContain('label')
         expect(Object.keys(response.body.recipe1)).toContain('ingredients')
+        expect(response.body.recipe1.cook_time).toBeGreaterThanOrEqual(15)
+        expect(response.body.recipe1.cook_time).toBeLessThanOrEqual(30)
       })
     })
   });
