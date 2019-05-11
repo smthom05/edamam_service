@@ -65,4 +65,29 @@ describe('Edamam Recipes API', () => {
       })
     })
   });
+
+  //recipe by calorie range endpoint
+  describe('Test GET /api/v1/recipes/calories', () => {
+    test('should return a 200 status and all recipes within the desired search parameters', () => {
+      return request(app).get('/api/v1/recipes/calories?calories=500-600').then(response => {
+        expect(response.status).toBe(200)
+        expect(response.body).toBeInstanceOf(Object)
+        expect(Object.keys(response.body.recipe1)).toContain('cook_time')
+        expect(Object.keys(response.body.recipe1)).toContain('calories')
+        expect(Object.keys(response.body.recipe1)).toContain('image')
+        expect(Object.keys(response.body.recipe1)).toContain('label')
+        expect(Object.keys(response.body.recipe1)).toContain('ingredients')
+        expect(response.body.recipe1.calories).toBeGreaterThanOrEqual(500)
+        expect(response.body.recipe2.calories).toBeGreaterThanOrEqual(500)
+        expect(response.body.recipe3.calories).toBeGreaterThanOrEqual(500)
+        expect(response.body.recipe4.calories).toBeGreaterThanOrEqual(500)
+        expect(response.body.recipe5.calories).toBeGreaterThanOrEqual(500)
+        expect(response.body.recipe6.calories).toBeGreaterThanOrEqual(500)
+        expect(response.body.recipe7.calories).toBeGreaterThanOrEqual(500)
+        expect(response.body.recipe8.calories).toBeGreaterThanOrEqual(500)
+        expect(response.body.recipe9.calories).toBeGreaterThanOrEqual(500)
+        expect(response.body.recipe10.calories).toBeGreaterThanOrEqual(500)
+      })
+    })
+  });
 });
