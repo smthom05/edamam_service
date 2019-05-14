@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1557605977998" clover="3.2.0">
-  <project timestamp="1557605977998" name="All files">
-    <metrics statements="96" coveredstatements="55" conditionals="9" coveredconditionals="6" methods="16" coveredmethods="5" elements="121" coveredelements="66" complexity="0" loc="96" ncloc="96" packages="4" files="5" classes="5"/>
+<coverage generated="1557611750456" clover="3.2.0">
+  <project timestamp="1557611750457" name="All files">
+    <metrics statements="117" coveredstatements="114" conditionals="9" coveredconditionals="6" methods="16" coveredmethods="15" elements="142" coveredelements="135" complexity="0" loc="117" ncloc="117" packages="5" files="9" classes="9"/>
     <package name="edamam_service">
       <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="app.js" path="/Users/manojpanta/Turing/4module/projects/edamam_service/app.js">
@@ -21,6 +21,42 @@
         <line num="17" count="1" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
         <line num="20" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="edamam_service.fixtures">
+      <metrics statements="21" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="calories.js" path="/Users/manojpanta/Turing/4module/projects/edamam_service/fixtures/calories.js">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="87" count="1" type="stmt"/>
+        <line num="115" count="1" type="stmt"/>
+      </file>
+      <file name="cookTime.js" path="/Users/manojpanta/Turing/4module/projects/edamam_service/fixtures/cookTime.js">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="87" count="1" type="stmt"/>
+        <line num="115" count="1" type="stmt"/>
+      </file>
+      <file name="ingredients.js" path="/Users/manojpanta/Turing/4module/projects/edamam_service/fixtures/ingredients.js">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="87" count="1" type="stmt"/>
+        <line num="115" count="1" type="stmt"/>
+      </file>
+      <file name="recipes.js" path="/Users/manojpanta/Turing/4module/projects/edamam_service/fixtures/recipes.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
       </file>
     </package>
     <package name="edamam_service.models">
@@ -68,9 +104,9 @@
       </file>
     </package>
     <package name="edamam_service.routes.api.v1">
-      <metrics statements="52" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="0"/>
+      <metrics statements="52" coveredstatements="51" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="10"/>
       <file name="recipes.js" path="/Users/manojpanta/Turing/4module/projects/edamam_service/routes/api/v1/recipes.js">
-        <metrics statements="52" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="0"/>
+        <metrics statements="52" coveredstatements="51" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="10"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -79,50 +115,50 @@
         <line num="6" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
         <line num="9" count="1" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
         <line num="23" count="1" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="28" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="32" count="0" type="stmt"/>
-        <line num="34" count="0" type="stmt"/>
-        <line num="35" count="0" type="stmt"/>
-        <line num="36" count="0" type="stmt"/>
-        <line num="39" count="1" type="stmt"/>
-        <line num="40" count="0" type="stmt"/>
-        <line num="41" count="0" type="stmt"/>
-        <line num="43" count="0" type="stmt"/>
-        <line num="44" count="0" type="stmt"/>
-        <line num="47" count="0" type="stmt"/>
-        <line num="49" count="0" type="stmt"/>
-        <line num="50" count="0" type="stmt"/>
-        <line num="51" count="0" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
         <line num="54" count="1" type="stmt"/>
-        <line num="55" count="0" type="stmt"/>
-        <line num="56" count="0" type="stmt"/>
-        <line num="58" count="0" type="stmt"/>
-        <line num="59" count="0" type="stmt"/>
-        <line num="62" count="0" type="stmt"/>
-        <line num="64" count="0" type="stmt"/>
-        <line num="65" count="0" type="stmt"/>
-        <line num="66" count="0" type="stmt"/>
-        <line num="71" count="0" type="stmt"/>
-        <line num="72" count="0" type="stmt"/>
-        <line num="73" count="0" type="stmt"/>
-        <line num="81" count="0" type="stmt"/>
-        <line num="84" count="1" type="stmt"/>
-        <line num="85" count="0" type="stmt"/>
-        <line num="86" count="0" type="stmt"/>
-        <line num="87" count="0" type="stmt"/>
-        <line num="89" count="0" type="stmt"/>
-        <line num="93" count="1" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="60" count="1" type="stmt"/>
+        <line num="62" count="1" type="stmt"/>
+        <line num="63" count="1" type="stmt"/>
+        <line num="66" count="1" type="stmt"/>
+        <line num="68" count="1" type="stmt"/>
+        <line num="69" count="1" type="stmt"/>
+        <line num="70" count="1" type="stmt"/>
+        <line num="75" count="4" type="stmt"/>
+        <line num="76" count="4" type="stmt"/>
+        <line num="77" count="4" type="stmt"/>
+        <line num="85" count="4" type="stmt"/>
+        <line num="88" count="1" type="stmt"/>
+        <line num="89" count="4" type="stmt"/>
+        <line num="90" count="4" type="stmt"/>
+        <line num="91" count="4" type="stmt"/>
+        <line num="93" count="0" type="stmt"/>
+        <line num="97" count="1" type="stmt"/>
       </file>
     </package>
   </project>
